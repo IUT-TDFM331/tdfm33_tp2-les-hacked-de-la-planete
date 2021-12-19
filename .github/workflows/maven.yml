@@ -22,6 +22,7 @@ jobs: # list des jobs à effectuer
       - name: Build the tests #
         run: mvn test
 
+
       - name: Send mail
         if: always()
         uses: dawidd6/action-send-mail@v2
@@ -29,7 +30,7 @@ jobs: # list des jobs à effectuer
           server_address: smtp.gmail.com
           server_port: 465
           # user credentials
-          username: gregvido17@gmail.com
+          username: gregory.jeannin@etu.unice.fr,arthur.dauphin@etu.unice.fr,eidem.essafi@etu.unice.fr,lilia.karouia@etu.unice.fr
           password: pztiljywmrmioevh
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
