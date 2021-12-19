@@ -47,3 +47,8 @@ jobs: # list des jobs à effectuer
         uses: slackapi/slack-github-action@v1.16.0
         env:
           SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+
+
+       - name: Check for modified files
+         id: git-check
+         run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
