@@ -16,3 +16,7 @@ Le test n'a pas fonctionné
 
 ### A.10- Qu'avez-vous remarqué ?
 Une pastille marron est apparut sur le github, mais lorsque nous survolons avec la souris cette pastille, elle nous dit que le programme s'est bien compiler.
+
+### A.13- Qu'avez-vous remarqué ?
+Le build est rouge lorsque l'on va sur les détails de "Build the tests"
+celui nous fait remarquer que le tests run a failed. 
