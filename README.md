@@ -10,3 +10,8 @@ Nous pouvons récupéré l'erreur.
 ### A.6 - Qu'avez-vous remarqué ?
 Nous pouvons commit mais github nous préviens qu'il y a eu une erreur dans la compilation du programme.
 (erreur dans le build)
+
+### A.9- Qu'avez-vous remarqué ?
+Le test n'a pas fonctionné 
+
+### A.10- Qu'avez-vous remarqué ?
