@@ -30,13 +30,13 @@ jobs: # list des jobs à effectuer
           server_address: smtp.gmail.com
           server_port: 465
           # user credentials
-          username: gregory.jeannin@etu.unice.fr,arthur.dauphin@etu.unice.fr,eidem.essafi@etu.unice.fr,lilia.karouia@etu.unice.fr
+          username: gregvido17@gmail.com
           password: pztiljywmrmioevh
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           # comma-separated string, send email to
-          to: gregory.jeannin@etu.unice.fr
+          to: gregory.jeannin@etu.unice.fr,arthur.dauphin@etu.unice.fr,eidem.essafi@etu.unice.fr,lilia.karouia@etu.unice.fr
           # from email name
           from: GitHub
