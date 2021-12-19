@@ -30,8 +30,8 @@ jobs: # list des jobs à effectuer
           server_address: smtp.gmail.com
           server_port: 465
           # user credentials
-          username: gregvido17@gmail.com
-          password: pztiljywmrmioevh
+          username: iuts3.class
+          password: kvkekkddxgmibljv
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
@@ -40,3 +40,10 @@ jobs: # list des jobs à effectuer
           to: gregory.jeannin@etu.unice.fr,arthur.dauphin@etu.unice.fr,eidem.essafi@etu.unice.fr,lilia.karouia@etu.unice.fr
           # from email name
           from: GitHub
+
+      - name: Send Slack
+        if: always()
+        id: slack
+        uses: slackapi/slack-github-action@v1.16.0
+        env:
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
